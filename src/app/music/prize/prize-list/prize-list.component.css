@@ -1,0 +1,65 @@
+.text
+{
+  text-align: justify;
+  text-overflow: ellipsis;
+  height: 200px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.fa
+{
+  color: rgb(190, 50, 3);
+  text-align: center;
+  padding: 30px;
+  font-size: 46px;
+}
+.card
+{
+  padding: 15px;
+  margin: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  border:1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-radius: 4px;
+  background-color:rgb(219, 231, 214) ;
+}
+.card:hover
+{
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.3);
+}
+.title
+{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.btn
+{
+  color: rgb(190, 50, 3)  ;
+  border-radius:50px;
+  margin: 8px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  background:rgb(219, 231, 214) ;
+}
+.content_btn
+{
+  text-align: center;
+}
+.content
+{
+  margin-top: 20px;
+}

@@ -1,0 +1,27 @@
+<div class="wrapper  justify-content-md-center">
+    <h1 i18n>Coleccionistas</h1>
+    <div class="row">
+      <div class="col-sm-3 col-xs-12 col-dm-4" *ngFor="let collector of collectors; index as i">
+        <div class="card" >
+          <table class="table" aria-describedby="info-collectors">
+              <tr>
+                <td scope="row"><em class="fa fa-user"></em></td>
+                <td ><span class="card-title">{{ collector.name }}</span></td>
+              </tr>
+              <tr>
+                <td scope="row"><em class="fa fa-phone-alt"></em></td>
+                <td><span class="card-title">{{ collector.telephone}}</span></td>
+              </tr>
+              <tr>
+                <td scope="row"><em class="fa fa-envelope-open-text"></em></td>
+                <td ><span class="card-title">{{ collector.email }}</span></td>
+              </tr>
+          </table>
+          <a routerLink="/collectors/{{collector.id}}" class="btn" ><span i18n>Ver</span> {{ collector.name }}</a>
+        </div>
+      </div>
+      <p id="info-collectors" class="text_hidden" i18n>
+        In this section you will find the information of collectors
+      </p>
+    </div>
+</div>

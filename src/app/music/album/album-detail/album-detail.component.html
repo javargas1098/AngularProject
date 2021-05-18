@@ -1,0 +1,284 @@
+<div class="container album-detail">
+  <div *ngIf="album" class="album">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <img
+          src="{{ album.cover }}"
+          class="img-polaroid"
+          alt="{{ album.name }}"
+        />
+      </div>
+      <div class="col-sm-6 col-xs-12">
+        <h1 data-test-id="album-name" class="card-title">{{ album.name }}</h1>
+        <h2>{{ album.genre }}</h2>
+        <p>{{ album.description }}</p>
+        <hr />
+
+        <p class="genre">{{ album.recordLabel }}</p>
+        <p>{{ album.releaseDate | date }}</p>
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <h2 class="card-title" i18n>Músicos</h2>
+        <table class="table table-striped" aria-describedby="info-music">
+          <tbody>
+            <tr>
+              <th scope="col" i18n>Nombre</th>
+              <th scope="col" i18n>Descripción</th>
+            </tr>
+            <tr *ngFor="let performer of album.performers; index as i">
+              <td class="btn" routerLink="/musicians/{{ performer.id }}">
+                {{ performer.name }}
+              </td>
+              <td>{{ performer.description }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-6 col-xs-12" *ngIf="album.comments.length > 0">
+        <h2 class="card-title">
+          <span i18n>Comentarios</span>
+          <span type="button" data-toggle="modal" data-target="#exampleModal">
+            <em class="fas fa-plus"></em>
+          </span>
+        </h2>
+        <table class="table table-striped" aria-describedby="info-comments">
+          <tbody>
+            <tr>
+              <th scope="col" i18n>Descripción</th>
+              <th scope="col" i18n>Clasificación</th>
+            </tr>
+            <tr *ngFor="let comment of album.comments; index as i">
+              <td>{{ comment.description }}</td>
+              <td>{{ comment.rating }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-6 col-xs-12" *ngIf="album.tracks.length > 0">
+        <h2 class="card-title" ><span i18n>Canciones</span>
+          <span type="button" data-toggle="modal" data-target="#modalTrack">
+            <em class="fas fa-plus"></em>
+          </span>
+        </h2>
+        <table class="table table-striped" aria-describedby="info-tracks">
+          <tbody>
+            <tr>
+              <th scope="col" i18n>Nombre</th>
+              <th scope="col" i18n>Duración</th>
+            </tr>
+            <tr *ngFor="let track of album.tracks; index as i">
+              <td>{{ track.name }}</td>
+              <td>{{ track.duration }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel" i18n>Nuevo Comentario</h1>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formComment" (ngSubmit)="(!formComment.invalid)">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" i18n> Coleccionista* </label>
+              <select
+                class="form-control"
+                aria-label="State"
+                formControlName="collector"
+                (change)="changeCollector($event.id)"
+              >
+                <option value="" i18n>Choose Collector</option>
+                <option *ngFor="let cl of collectors" [ngValue]="cl.id">
+                  {{ cl.name }}
+                </option>
+              </select>
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formComment.get('collector').hasError('required') &&
+                  formComment.get('collector').touched
+                "
+              >
+                <span i18n>Collector es requerido</span>
+              </div>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" i18n> Comentario* </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="description"
+                aria-label="Small"
+                placeholder="Descripción del comentario"
+              />
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formComment.get('description').hasError('required') &&
+                  formComment.get('description').touched
+                "
+              >
+                <sup>*</sup>
+                <span i18n>Description required</span>
+              </div>
+            </div>
+
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" i18n> Rating* </label>
+              <select
+                class="form-control"
+                aria-label="State"
+                formControlName="rating"
+                (change)="changeRating($event.id)"
+              >
+                <option value="" i18n>Choose Rating</option>
+                <option *ngFor="let num of ratingList" [ngValue]="num">
+                  {{ num }}
+                </option>
+              </select>
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formComment.get('rating').hasError('required') &&
+                  formComment.get('rating').touched
+                "
+              >
+                <span i18n>Rating es requerido</span>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-cancel" type="button" data-dismiss="modal">
+            <span i18n>Close</span>
+          </button>
+          <button
+            type="button"
+            class="btn btn-create"
+            [disabled]="!formComment.valid"
+            (click)="saveComment()"
+          >
+          <span i18n>Save changes</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="modalTrack"
+    tabindex="-1"
+    role="dialog"
+    aria-label="State"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" i18n>Nueva Canción</h1>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formTrack" (ngSubmit)="(!formTrack.invalid)">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" i18n> Nombre* </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="name"
+                aria-label="State"
+                placeholder="Nombre de la canción"
+              />
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formTrack.get('name').hasError('required') &&
+                  formTrack.get('name').touched
+                "
+              >
+                <sup>*</sup>
+                <span i18n>Description required</span>
+              </div>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" i18n> Duración* </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="duration"
+                aria-label="State"
+                placeholder="Duración"
+              />
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formTrack.get('duration').hasError('required') &&
+                  formTrack.get('duration').touched
+                "
+              >
+                <sup>*</sup>
+                <span i18n>Duración required</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-cancel" type="button" data-dismiss="modal">
+            Close
+          </button>
+          <button
+            type="button"
+            class="btn btn-create"
+            [disabled]="!formTrack.valid"
+            (click)="saveTrack()"
+          >
+            <span i18n>Save changes</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div >
+    <p id="info-music" class="text_hidden" i18n>
+      In this section you will find the information of music
+    </p>
+    <p id="info-comments" class="text_hidden" i18n>
+      In this section you will find the information of comments
+    </p>
+    <p id="info-tracks" class="text_hidden" i18n>
+      In this section you will find the information of tracks
+    </p>
+  </div>
+  <div *ngIf="!album">
+    <app-not-found id="notfound"></app-not-found>
+  </div>
+</div>

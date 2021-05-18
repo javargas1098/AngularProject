@@ -1,0 +1,18 @@
+
+<div class="musicians-container  justify-content-md-center">
+  <h1 i18n>Músicos</h1>
+    <div class="row">
+      <div class="col-sm-4 col-xs-12" *ngFor="let musician of musicians; index as i">
+          <div class="box"  >
+              <div class="main">
+                <img class="card-img-top img-fluid img-thumbnail image_musician" src="{{musician.image}}" alt="{{musician.name}}">
+                <h2 class="card-title">{{ musician.name }}</h2>
+                <a routerLink="/musicians/{{musician.id}}" class="btn"><span i18n>Ver detalle</span> </a>
+              </div>
+              <div class="posts"> {{musician.albums.length}} <p i18n>Álbumes</p></div>
+              <div class="posts"> {{musician.performerPrizes.length}}  <p i18n>Premios</p> </div>
+          </div>
+      </div>
+    </div>
+</div>
+

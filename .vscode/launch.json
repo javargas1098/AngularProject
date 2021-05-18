@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open coleccionista-detail.component.html",
+            "file": "e:\\USER\\Projects\\Andes\\Angular\\202112_Equipo_26\\src\\app\\music\\coleccionista\\coleccionista-detail\\coleccionista-detail.component.html"
+        },
+        {
+          "type": "chrome",
+          "request": "launch",
+          "name": "Launch Chrome against localhost",
+          "url": "http://localhost:9876",
+          "webRoot": "${workspaceFolder}"
+      }
+    ]
+}

@@ -1,0 +1,191 @@
+<div class="container album-create content">
+  <div class="row">
+    <div class="col-12 p-3">
+      <h1 i18n>Creación de álbum</h1>
+      <form
+        [formGroup]="albumForm"
+        (ngSubmit)="!albumForm.invalid && createalbum(albumForm.value)"
+      >
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="name" i18n> Nombre * </label>
+          <input
+            novalidate
+            id="name"
+            class="form-control"
+            formControlName="name"
+            placeholder="Name álbum"
+            i18n-placeholder
+          />
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              albumForm.get('name').hasError('required') &&
+              albumForm.get('name').touched
+            "
+          >
+            <span i18n>Nombre es requerido</span>
+          </div>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              albumForm.get('name').hasError('minlength') &&
+              albumForm.get('name').touched
+            "
+          >
+            <span i18n
+              >Nombre demasiado corto. Debería tener al menos 4 caracteres</span
+            >
+          </div>
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="description" i18n> Descripción * </label>
+          <input
+            novalidate
+            id="description"
+            class="form-control"
+            formControlName="description"
+            placeholder="Descripción álbum"
+            i18n-placeholder
+          />
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              albumForm.get('description').hasError('required') &&
+              albumForm.get('description').touched
+            "
+          >
+            <span i18n>Descripción es requerido</span>
+          </div>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              albumForm.get('description').hasError('minlength') &&
+              albumForm.get('description').touched
+            "
+          >
+            <span i18n
+              >Descripción es demasiado corto. Debería tener al menos 4
+              caracteres</span
+            >
+          </div>
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="cover" i18n> Portada * </label>
+          <input
+            id="cover"
+            type="text"
+            class="form-control"
+            formControlName="cover"
+            placeholder="Cover"
+            i18n-placeholder
+          />
+
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              albumForm.get('cover').hasError('required') &&
+              albumForm.get('cover').touched
+            "
+          >
+            <span i18n>Portada es requerido</span>
+          </div>
+        </div>
+
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="genre" i18n> Género * </label>
+          <select id="genre" class="form-control" formControlName="genre">
+            <option value="" i18n>Seleccione</option>
+            <option value="Classical" i18n>Clasica</option>
+            <option value="Salsa" i18n>Salsa</option>
+            <option value="Rock" i18n>Rock</option>
+            <option value="Folk" i18n>Folk</option>
+          </select>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              albumForm.get('genre').hasError('required') &&
+              albumForm.get('genre').touched
+            "
+          >
+            <span i18n>Género es requerido</span>
+          </div>
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="recordLabel" i18n> Sello discográfico * </label>
+          <select
+            id="recordLabel"
+            class="form-control"
+            formControlName="recordLabel"
+          >
+            <option value="" i18n>Seleccione</option>
+            <option value="Sony Music" i18n>Sony Music</option>
+            <option value="EMI" i18n>EMI</option>
+            <option value="Discos Fuentes" i18n>Discos Fuentes</option>
+            <option value="Elektra" i18n>Elektra</option>
+            <option value="Elektra" i18n>Fania Record</option>
+          </select>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              albumForm.get('recordLabel').hasError('required') &&
+              albumForm.get('recordLabel').touched
+            "
+          >
+            <span i18n>Sello discográfico es requerido</span>
+          </div>
+        </div>
+
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="releaseDate" i18n> Fecha de publicación * </label>
+          <input
+            id="releaseDate"
+            type="date"
+            class="form-control"
+            formControlName="releaseDate"
+          />
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              albumForm.get('releaseDate').hasError('required') &&
+              albumForm.get('releaseDate').touched
+            "
+          >
+            <span i18n>Fecha de publicación es requerida</span>
+          </div>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            *ngIf="
+              albumForm.get('releaseDate').touched &&
+              albumForm.get('releaseDate').hasError('required')
+            "
+          >
+            <span i18n
+              >Formato incorrecto ,el formato correcto de la fecha de
+              publicación es Día/Mes/Año Completo</span
+            >
+          </div>
+        </div>
+
+        <div class="row m-3 small">
+          <p i18n>* Campos requeridos</p>
+        </div>
+        <div class="row m-3">
+          <button
+            type="submit"
+            class="btn btn-create"
+            [disabled]="!albumForm.valid"
+          >
+            <span i18n>Crear</span>
+          </button>
+          <button
+            type="button"
+            class="btn btn-cancel ml-3"
+            (click)="cancelCreation()"
+          >
+            <span i18n>Cancelar</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

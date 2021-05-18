@@ -1,0 +1,38 @@
+<div class="container prize-detail">
+  <div *ngIf="prize" class="prize">
+    <div class="row">
+        <div class="col-sm-12 col-xs-12">
+            <h1 data-test-id="prize-name" class="card-title">{{prize.name}}</h1>
+            <h2 >{{prize.organization}}</h2>
+            <p>{{prize.description}}</p>
+            <br>
+        </div>
+    </div>
+       <div class="row" *ngIf="performerList">
+        <div  class="col-sm-6 col-xs-12">
+          <table class="table table-striped" aria-describedby="info-musicians">
+              <tbody>
+                <tr>
+                  <th scope="col" i18n>Nombre</th>
+                  <th scope="col" i18n>Descripción</th>
+                </tr>
+                <tr  *ngFor="let performer of performerList; index as i" >
+                  <td class="btn" routerLink="/musicians/{{performer.id}}">{{performer.name}}</td>
+                  <td>{{performer.description}}</td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+  <div>
+    <p id="info-musicians" class="text_hidden" i18n>
+      In this section you will find the information of musicians
+    </p>
+  </div>
+  <div *ngIf="!prize">
+    <app-not-found id="notfound"></app-not-found>
+  </div>
+</div>
+
+

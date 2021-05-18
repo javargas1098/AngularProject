@@ -1,0 +1,246 @@
+<div class="container collector-detail">
+  <div *ngIf="collectorDetail" class="album">
+    <div class="row">
+      <div class="col-sm-12 col-xs-12">
+        <h1 class="card-title">{{ collectorDetail.name }}</h1>
+        <h2>{{ collectorDetail.telephone }}</h2>
+        <p>{{ collectorDetail.email }}</p>
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <h2 class="card-title">
+          <span>Músicos</span>
+          <span type="button" data-toggle="modal" data-target="#modalMusic">
+            <em class="fas fa-plus"></em>
+          </span>
+        </h2>
+        <table
+          data-test-id="collector-artists"
+          class="table table-striped"
+          aria-describedby="info-music"
+        >
+          <tbody>
+            <tr>
+              <th scope="col" i18n>Nombre</th>
+              <th scope="col" i18n>Descripción</th>
+            </tr>
+            <tr *ngFor="let performer of artista; index as i">
+              <td>{{ performer.name }}</td>
+              <td>{{ performer.description }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-6 col-xs-12" *ngIf="comments.length > 0">
+        <h2 class="card-title"i18n>Comentarios</h2>
+        <table
+          data-test-id="collector-comments"
+          class="table table-striped"
+          aria-describedby="info-comments"
+        >
+          <tbody>
+            <tr>
+              <th scope="col" i18n>Descripción</th>
+              <th scope="col" i18n>Clasificación</th>
+            </tr>
+            <tr *ngFor="let comment of comments; index as i">
+              <td>{{ comment.description }}</td>
+              <td>{{ comment.rating }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-6 col-xs-12" *ngIf="collectorAlbum.length > 0">
+        <h2 class="card-title">
+          <span i18n>Álbumes</span>
+          <span type="button" data-toggle="modal" data-target="#addAlbumModal">
+            <em class="fas fa-plus"></em>
+          </span>
+        </h2>
+        <table
+          data-test-id="collector-album"
+          class="table table-striped"
+          aria-describedby="info-album"
+        >
+          <tbody>
+            <tr>
+              <th scope="col" i18n>Nombre</th>
+              <th scope="col" i18n>Descripción</th>
+            </tr>
+            <tr *ngFor="let album of collectorAlbum; index as i">
+              <td class="btn" routerLink="/musicians/{{ album.id }}">
+                {{ album.album.name }}
+              </td>
+              <td>{{ album.album.description }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="modalMusic"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="modalMusicLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="modalMusicLabel" i18n>Agregra nuevo musico</h1>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formMusic" (ngSubmit)="(!formMusic.invalid)">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" i18n> Musicos* </label>
+              <select
+                class="form-control"
+                formControlName="musico"
+                aria-label="State"
+                (change)="changeMusic($event)"
+              >
+                <option value="" i18n>Lista de  musicos</option>
+                <option *ngFor="let cl of musicians" [ngValue]="cl.id">
+                  {{ cl.name }}
+                </option>
+              </select>
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formMusic.get('musico').hasError('required') &&
+                  formMusic.get('musico').touched
+                "
+              >
+                <span i18n>El musico es requerido</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-cancel" type="button" data-dismiss="modal">
+            <span i18n>Cerrar</span>
+          </button>
+          <button
+            type="button"
+            class="btn btn-create"
+            [disabled]="!formMusic.valid"
+            (click)="saveMusic()"
+          >
+          <span i18n>Grabar</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="addAlbumModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="addAlbumModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="addAlbumModalLabel" i18n>
+            Agrega nuevo album
+          </h1>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formAlbums" (ngSubmit)="(!formAlbums.invalid)">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" i18n> Álbumes* </label>
+              <select
+                class="form-control"
+                formControlName="album"
+                aria-label="State"
+                (change)="changeMusic($event)"
+              >
+                <option value="" i18n>Elige un Álbum</option>
+                <option *ngFor="let cl of albumes" [ngValue]="cl">
+                  {{ cl.name }}
+                </option>
+              </select>
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formAlbums.get('album').hasError('required') &&
+                  formAlbums.get('album').touched
+                "
+              >
+                <span i18n>El Album es requerido</span>
+              </div>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" i18n> Precio* </label>
+              <input
+                class="form-control"
+                type="number"
+                formControlName="price"
+                placeholder="precio"
+              />
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formAlbums.get('price').hasError('required') &&
+                  formAlbums.get('price').touched
+                "
+              >
+                <span i18n>El precio es requerido</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-cancel" type="button" data-dismiss="modal">
+            <span i18n>Cerrar</span>
+          </button>
+          <button
+            type="button"
+            class="btn btn-create"
+            [disabled]="!formAlbums.valid"
+            (click)="saveAlbumToCollector()"
+          >
+            <span i18n>Grabar</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p id="info-music" class="text_hidden" i18n>
+      In this section you will find the information of music
+    </p>
+    <p id="info-comments" class="text_hidden" i18n>
+      In this section you will find the information of comments
+    </p>
+    <p id="info-album" class="text_hidden" i18n>
+      In this section you will find the information of album
+    </p>
+  </div>
+  <div *ngIf="!collectorDetail">
+    <app-not-found id="notfound"></app-not-found>
+  </div>
+</div>

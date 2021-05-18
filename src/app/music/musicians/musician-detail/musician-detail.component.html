@@ -1,0 +1,176 @@
+<div class="container musicians-detail">
+  <div *ngIf="musician" class="collector">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12 content_image">
+        <img
+          src="{{ musician.image }}"
+          class="img-polaroid img-responsive"
+          alt="{{ musician.name }}"
+        />
+      </div>
+      <div class="col-sm-6 col-xs-12">
+        <h1 data-test-id="musician-name" class="card-title">
+          {{ musician.name }}
+        </h1>
+        <p><span i18n>Fecha de nacimiento:</span> {{ musician.birthDate | date }}</p>
+        <p id="text">{{ musician.description }}</p>
+        <br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <h2 class="card-title" i18n>Álbumes</h2>
+        <table class="table table-striped" aria-describedby="info-album">
+          <tbody>
+            <tr>
+              <th scope="col" i18n>Nombre</th>
+              <th scope="col" i18n>Descripción</th>
+            </tr>
+            <tr *ngFor="let album of musician.albums; index as i">
+              <td class="btn" routerLink="/albums/{{ album.id }}">
+                {{ album.name }}
+              </td>
+              <td>{{ album.description }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-6 col-xs-12" *ngIf="musician.performerPrizes">
+        <h2 class="card-title">
+          <span i18n>Premios</span>
+          <span type="button" data-toggle="modal" data-target="#exampleModal">
+            <em class="fas fa-plus"></em>
+          </span>
+        </h2>
+        <table class="table table-striped" aria-describedby="info-prize">
+          <tbody>
+            <tr>
+              <th scope="col" i18n>Nombre</th>
+              <th scope="col" i18n>Descripción</th>
+              <th scope="col" i18n>Organización</th>
+            </tr>
+            <tr
+              *ngFor="
+                let performerPrizes of musician.performerPrizes;
+                index as i
+              "
+            >
+              <td class="btn" routerLink="/prizes/{{ performerPrizes.id }}">
+                {{ performerPrizes.name }}
+              </td>
+              <td>{{ performerPrizes.description }}</td>
+              <td>{{ performerPrizes.organization }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel" i18n>Nuevo Comentario</h1>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formPrize" (ngSubmit)="(!formPrize.invalid)">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" i18n> Premios* </label>
+              <select
+                class="form-control"
+                formControlName="prize"
+                aria-label="State"
+                (change)="changePrize($event.id)"
+              >
+              <option value="" i18n>Seleccione</option>
+                <option *ngFor="let cl of prizes" [ngValue]="cl.id">
+                  {{ cl.name }}
+                </option>
+              </select>
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formPrize.get('prize').hasError('required') &&
+                  formPrize.get('prize').touched
+                "
+              >
+                <span i18n>El premio es requerido</span>
+              </div>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="name" i18n> Fecha premiacion* </label>
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  placeholder="yyyy-mm-dd"
+                  formControlName="date"
+                  type="date"
+                />
+              </div>
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formPrize.get('date').hasError('required') &&
+                  formPrize.get('date').touched
+                "
+              >
+                <span i18n>Fecha de publicación es requerida</span>
+              </div>
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                *ngIf="
+                  formPrize.get('date').touched &&
+                  formPrize.get('date').hasError('required')
+                "
+              >
+                <span i18n
+                  >Formato incorrecto ,el formato correcto de la fecha de
+                  publicación es Día/Mes/Año Completo</span
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-cancel" type="button" data-dismiss="modal">
+            <span i18n>Cerrar</span>
+          </button>
+          <button
+            type="button"
+            class="btn btn-create"
+            [disabled]="!formPrize.valid"
+            (click)="savePrize()"
+          >
+           <span i18n>Grabar</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p id="info-album" class="text_hidden" i18n>
+      In this section you will find the information of album
+    </p>
+    <p id="info-prize" class="text_hidden" i18n>
+      In this section you will find the information of prize
+    </p>
+  </div>
+  <div *ngIf="!musician">
+    <app-not-found id="notfound"></app-not-found>
+  </div>
+</div>

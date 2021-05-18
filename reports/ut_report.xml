@@ -1,0 +1,21 @@
+<testExecutions version="1">
+  <file path="src/app/music/album/album.service.spec.ts">
+    <testCase name="Service: Album should ..." duration="12"/>
+  </file>
+  <file path="src/app/music/album/album-list/album-list.component.spec.ts">
+    <testCase name="AlbumComponent Component has a list" duration="49"/>
+    <testCase name="AlbumComponent should create" duration="9"/>
+  </file>
+  <file path="src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.spec.ts">
+    <testCase name="ColeccionistaDetailComponent without coleccionista coleccionista should be undefined and not found page should appear" duration="87"/>
+    <testCase name="ColeccionistaDetailComponent without coleccionista should create" duration="14"/>
+  </file>
+  <file path="src/app/music/musicians/musician-detail/musician-detail.component.spec.ts">
+    <testCase name="with musicians musician name should appear in the dom" duration="62"/>
+    <testCase name="MusicianDetailComponent without musicians musician should be undefined and not found page should appear" duration="13"/>
+    <testCase name="MusicianDetailComponent without musicians should create" duration="15"/>
+  </file>
+  <file path="src/app/music/prize/prize-detail/prize-detail.component.spec.ts">
+    <testCase name="with prizes prize name should appear in the dom" duration="14"/>
+  </file>
+</testExecutions>

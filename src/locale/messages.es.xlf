@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es-CO" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id = "ngb.alert.close" datatype = "html">
+        <source> Cerrar </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/alert/alert.ts </context>
+          <context context-type = "linenumber"> 58,59 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.carousel.slide-number" datatype = "html">
+        <source> Diapositiva <x id = "INTERPOLATION" equiv-text = "private _foc" /> de <x id = "INTERPOLATION_1" equiv-text = "bject (false);" /> </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts </context>
+          <context context-type = "linenumber"> 111,117 </context>
+        </context-group>
+        <note priority = "1" from = "description"> Número de diapositiva seleccionado actualmente leído por el lector de pantalla </note>
+      </trans-unit>
+      <trans-unit id = "ngb.carousel.previous" datatype = "html">
+        <source> Anterior </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts </context>
+          <context context-type = "linenumber"> 130,132 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.carousel.next" datatype = "html">
+        <source> Siguiente </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts </context>
+          <context context-type = "linenumber"> 144,147 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.select-month" datatype = "html">
+        <source> Seleccione el mes </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linenumber"> 42,47 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linenumber"> 47,50 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.select-year" datatype = "html">
+        <source> Seleccione el año </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linoumber"> 59,62 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linoumber"> 69,74 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.previous-month" datatype = "html">
+        <source> Mes anterior </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linoumber"> 23,27 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linoumber"> 33,35 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.next-month" datatype = "html">
+        <source> El próximo mes </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linoumber"> 43,47 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linenumber"> 55,59 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.pagination.first" datatype = "html">
+        <source> «« </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts </context>
+          <context context-type = "linenumber"> 181,182 </context>
+        </context-group>
+      </trans-unit>
+
+<trans-unit id = "ngb.alert.close" datatype = "html">
+        <source> Cerrar </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/alert/alert.ts </context>
+          <context context-type = "linenumber"> 58,59 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.carousel.slide-number" datatype = "html">
+        <source> Diapositiva <x id = "INTERPOLATION" equiv-text = "private _foc" /> de <x id = "INTERPOLATION_1" equiv-text = "bject (false);" /> </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts </context>
+          <context context-type = "linenumber"> 111,117 </context>
+        </context-group>
+        <note priority = "1" from = "description"> Número de diapositiva seleccionado actualmente leído por el lector de pantalla </note>
+      </trans-unit>
+      <trans-unit id = "ngb.carousel.previous" datatype = "html">
+        <source> Anterior </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts </context>
+          <context context-type = "linenumber"> 130,132 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.carousel.next" datatype = "html">
+        <source> Siguiente </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts </context>
+          <context context-type = "linenumber"> 144,147 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.select-month" datatype = "html">
+        <source> Seleccione el mes </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linenumber"> 42,47 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linenumber"> 47,50 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.select-year" datatype = "html">
+        <source> Seleccione el año </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linoumber"> 59,62 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linoumber"> 69,74 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.previous-month" datatype = "html">
+        <source> Mes anterior </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linoumber"> 23,27 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linoumber"> 33,35 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.next-month" datatype = "html">
+        <source> El próximo mes </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linoumber"> 43,47 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linenumber"> 55,59 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.pagination.first" datatype = "html">
+        <source> «« </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts </context>
+          <context context-type = "linenumber"> 181,182 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.alert.close" datatype = "html">
+        <source> Cerrar </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/alert/alert.ts </context>
+          <context context-type = "linenumber"> 58,59 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.carousel.slide-number" datatype = "html">
+        <source> Diapositiva <x id = "INTERPOLATION" equiv-text = "private _foc" /> de <x id = "INTERPOLATION_1" equiv-text = "bject (false);" /> </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts </context>
+          <context context-type = "linenumber"> 111,117 </context>
+        </context-group>
+        <note priority = "1" from = "description"> Número de diapositiva seleccionado actualmente leído por el lector de pantalla </note>
+      </trans-unit>
+      <trans-unit id = "ngb.carousel.previous" datatype = "html">
+        <source> Anterior </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts </context>
+          <context context-type = "linenumber"> 130,132 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.carousel.next" datatype = "html">
+        <source> Siguiente </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/carousel/carousel.ts </context>
+          <context context-type = "linenumber"> 144,147 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.select-month" datatype = "html">
+        <source> Seleccione el mes </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linenumber"> 42,47 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linenumber"> 47,50 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.select-year" datatype = "html">
+        <source> Seleccione el año </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linoumber"> 59,62 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation-select.ts </context>
+          <context context-type = "linoumber"> 69,74 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.previous-month" datatype = "html">
+        <source> Mes anterior </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linoumber"> 23,27 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linoumber"> 33,35 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.datepicker.next-month" datatype = "html">
+        <source> El próximo mes </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linoumber"> 43,47 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/datepicker/datepicker-navigation.ts </context>
+          <context context-type = "linenumber"> 55,59 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.pagination.first" datatype = "html">
+        <source> «« </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts </context>
+          <context context-type = "linenumber"> 181,182 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.pagination.previous" datatype = "html">
+        <source> «</source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts </context>
+          <context context-type = "linenumber"> 186,187 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.pagination.next" datatype = "html">
+        <source> »</source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts </context>
+          <context context-type = "linenumber"> 193,194 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.pagination.last" datatype = "html">
+        <source> »» </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts </context>
+          <context context-type = "linenumber"> 201,203 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.pagination.first-aria" datatype = "html">
+        <source> Primero </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts </context>
+          <context context-type = "linenumber"> 207,208 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.pagination.previous-aria" datatype = "html">
+        <source> Anterior </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts </context>
+          <context context-type = "linenumber"> 214,215 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.pagination.next-aria" datatype = "html">
+        <source> Siguiente </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts </context>
+          <context context-type = "linenumber"> 224,226 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.pagination.last-aria" datatype = "html">
+        <source> Last </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/pagination/pagination.ts </context>
+          <context context-type = "linenumber"> 231,232 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.progressbar.value" datatype = "html">
+        <source> <x id = "INTERPOLATION" equiv-text = "}
+
+  obtener max ("/> </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/progressbar/progressbar.ts </context>
+          <context context-type = "linoumber"> 30,35 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.HH" datatype = "html">
+        <source> HH </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linoumber"> 40,41 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.hours" datatype = "html">
+        <source> Horas </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linenumber"> 45,46 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.MM" datatype = "html">
+        <source> MM </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linenumber"> 50,53 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.minutes" datatype = "html">
+        <source> Minutos </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linoumber"> 57,59 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.increment-hours" datatype = "html">
+        <source> Incremento de horas </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linoumber"> 63,64 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.decrement-hours" datatype = "html">
+        <source> Disminuir las horas </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linenumber"> 68,69 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.increment-minutes" datatype = "html">
+        <source> Incrementar minutos </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linoumber"> 75,77 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.decrement-minutes" datatype = "html">
+        <source> Disminuir los minutos </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linoumber"> 82,84 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.SS" datatype = "html">
+        <source> SS </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linenumber"> 86,87 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.seconds" datatype = "html">
+        <source> Segundos </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linenumber"> 91,92 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.increment-seconds" datatype = "html">
+        <source> Incremento de segundos </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linenumber"> 98,100 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.decrement-seconds" datatype = "html">
+        <source> Disminuir los segundos </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linenumber"> 105,106 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.PM" datatype = "html">
+        <source> <x id = "INTERPOLATION" equiv-text = "_ minutoPaso: n" /> </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linenumber"> 116,123 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.timepicker.AM" datatype = "html">
+        <source> <x id = "INTERPOLATION" equiv-text = "ntrolValueAcces" /> </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/timepicker/timepicker.ts </context>
+          <context context-type = "linenumber"> 141,115 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ngb.toast.close-aria" datatype = "html">
+        <source> Cerrar </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> node_modules/@ng-bootstrap/ng-bootstrap/src/toast/toast.ts </context>
+          <context context-type = "linenumber"> 76,80 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="350ef83526d5963a90b55001acd783bbf589bd34" datatype="html">
+        <source>Creación de álbum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dad3b32dbcced120ab99b61e2d0d5a48600bfcd2" datatype="html">
+        <source> Nombre * </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7d9568b4f97cf50550538d64750b2a9c027a8b30" datatype="html">
+        <source>Nombre es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="126c8b83b8930ee3b168f836f99bed00dbf96a47" datatype="html">
+        <source>Nombre demasiado corto. Debería tener al menos 4 caracteres</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="09c6cd267c72ba0ebc9351aa5ee999a3a8fe86ec" datatype="html">
+        <source> Descripción * </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5e58ccdc582fefd30a36e1aa47ea28fefbfe22e5" datatype="html">
+        <source>Descripción es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bca3f6d83eafffa3b2ad3264bb69eaf140f3bb98" datatype="html">
+        <source>Descripción es demasiado corto. Debería tener al menos 4 caracteres</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ff4607123cdb5a2663ababf5918166410aa9150e" datatype="html">
+        <source> Portada * </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3ece76ab8a8acd693508b4872424762de7f9f09c" datatype="html">
+        <source>Portada es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="601521afa194dabba55114eda633e10d81e309c0" datatype="html">
+        <source> Género * </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3cdc22e2c68086dcf22e857e3e649e12ccef0daf" datatype="html">
+        <source>Seleccione</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f39e82ea9e615030739a6ca2903292164681344b" datatype="html">
+        <source>Clasica</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e2ca98726989ace0fd22e35f2ef1d65e95be9556" datatype="html">
+        <source>Salsa</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aad2e331d2cb406737b5ede02731742d119460d3" datatype="html">
+        <source>Rock</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="079429b03b9688b35f8959b1d8f0efb92c278ee3" datatype="html">
+        <source>Folk</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a4e6d45aeae2706aa14b8224d1a8bfbb37e99269" datatype="html">
+        <source>Género es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="27bb15060830a88d4e46810456af81fdd6262427" datatype="html">
+        <source>Portada</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3691785433b7ee6d76ebe3b90c03ad7a6b7a07a4" datatype="html">
+        <source> Sello discográfico * </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f79611b9cc78f612ae8cc2cce08ff9f14581aeb3" datatype="html">
+        <source>Seleccione</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="028fa50d671841c435147061bf90ee61c3c45d8b" datatype="html">
+        <source>Sony Music</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e1d4692323cc0e5d7a89d0a14bef2c2f285e7cc9" datatype="html">
+        <source>EMI</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3e27ccf60a916d87407ad2a2837ed1b4dcc27651" datatype="html">
+        <source>Discos Fuentes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ddd0a01c149f38802929f4137a0f898f94064b6b" datatype="html">
+        <source>Elektra</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="83c3952ea1861afb50cd3a7bdf20b1bd8d0abf5a" datatype="html">
+        <source>Fania Record</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="45c4fdb76739d9c8e724aa5bf4fc6b8f31263390" datatype="html">
+        <source>Sello discográfico es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="31e3154c1c0915e66fbefd07426e519e7ea76b08" datatype="html">
+        <source> Fecha de publicación * </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7adbcf6434aa78f5b0c00b0457b47fe7153e59bd" datatype="html">
+        <source>Fecha de publicación es requerida</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1b7155cf1d9784a50b36ee87f9abc144e2a8c587" datatype="html">
+        <source>Formato incorrecto ,el formato correcto de la fecha de publicación es Día/Mes/Año Completo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fd281097480fd7ea5d135700a15bec602987ab71" datatype="html">
+        <source>* Campos requeridos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9aff1f532c9b4b7b54da2f7221cdb8a406b600da" datatype="html">
+        <source>Crear</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e8d22cdef9f5780e31395340125d873f9df518c3" datatype="html">
+        <source>Cancelar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="23c5b623afc011f4cf1894d3a4410abca9ebcd7a" datatype="html">
+        <source>Name álbum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b9fc9abb976a6e567ba54826bdedf4976513e811" datatype="html">
+        <source>Descripción álbum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "630d33522f4eadda9a5cd885545f6edc25eada5d" datatype = "html">
+        <source> Músicos </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 24 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "dd2a11ebc737589080ed400dacc33a8c8c84728b" datatype = "html">
+        <source> Nombre </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 28 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 79 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "b0e611b2bfac70d1af43295307e558cbf9f48e57" datatype = "html">
+        <source> Descripción </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 29 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 55 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "9bea75f59a97f4d38867c24cd4ebc75243eaa406" datatype = "html">
+        <source> Comentarios </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 42 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "df7a2af49169c70b114ea66b54724f0fcdf95b7a" datatype = "html">
+        <source> Clasificación </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 56 </context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id = "c01abbdcf30c2b4ff99aeeed54c399370b3f7cfd" datatype = "html">
+        <source> Duración </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 80 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "e0e5a2ad2b49a93d6f1cff0b95d67958b38e613e" datatype = "html">
+        <source> Nuevo Comentario </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 102 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "8a1f05b6af213ab7aa5d8781882a497147f72cfe" datatype = "html">
+        <source> Coleccionista * </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 115 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "b2252bf1d7dff6cd64c378175cdd53c5ab11be70" datatype = "html">
+        <source> Elija el recopilador </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linoumber"> 121 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "0ab3b7c373384d21acc1681deed82a919fdd482a" datatype = "html">
+        <source> Por favor, seleccione un recopilador </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 127 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "2aa84265c5d0dc37eae5d0855fb7da289f7e59cf" datatype = "html">
+        <source> Comentario * </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linoumber"> 131 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "7491b1ebfc5dd457492a5c481e2d2254216dc1fc" datatype = "html">
+        <source> Descripción requerida </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linoumber"> 147 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linoumber"> 225 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ba7146278428a76a944b5c06e2363c0d38dc4792" datatype = "html">
+        <source> Calificación * </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linoumber"> 152 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "d276523a0806757c704ffaa35a1b82902c605a4e" datatype = "html">
+        <source> Elija calificación </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linoumber"> 158 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "eb0b883b252fb458dfbeee82e95fdf57c106ee70" datatype = "html">
+        <source> Ingrese una calificación </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 164 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8" datatype = "html">
+        <source> Cerrar </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 171 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "5b3075e8dc3f3921ec316b0bd83b6d14a06c1a4f" datatype = "html">
+        <source> Guardar cambios </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linoumber"> 179 </context>
+        </context-group>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linoumber"> 262 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "163ad1ed6d61ffc4a0ad7d4a0d800c39f203c25e" datatype = "html">
+        <source> Nueva Canción </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linoumber"> 195 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "a8d7bd8f964e6f53836dfbbc0f91cae1b95b5932" datatype = "html">
+        <source> Nombre * </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 209 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "5500b4c8f00ae6c700d227083ab9fb84115d55cd" datatype = "html">
+        <source> Duración * </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linoumber"> 229 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "ab660c431a8350d47836969925b121d792582f6f" datatype = "html">
+        <source> Duración requerida </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 245 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "0f1c888f44252027b18fc55c11f25b25207928e3" datatype = "html">
+        <source> En esta sección encontrarás la información de la música </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 271,272 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "1c91dfb949044fa1f8a43e8c12d6a96fbaf0e70e" datatype = "html">
+        <source> En esta sección encontrarás la información de comentarios </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 274,275 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "00902bd5765e089db77e579ccfd17b71f007fc4d" datatype = "html">
+        <source> En esta sección encontrarás la información de las pistas </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-detail/album-detail.component.html </context>
+          <context context-type = "linenumber"> 277,278 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "2cc812f8063c52bebb2b9fae9308428ee6c00e17" datatype = "html">
+        <source> Álbumes </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-list/album-list.component.html </context>
+          <context context-type = "linenumber"> 5 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "aae35a9d61babb4fdd7dea64668c7994957f1a7b" datatype = "html">
+        <source> Crear álbum </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-list/album-list.component.html </context>
+          <context context-type = "linenumber"> 6 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id = "dd76629c5f867387b97feb6b151a211c1bb8d425" datatype = "html">
+        <source> Ver </source>
+        <context-group = "ubicación">
+          <context context-type = "sourcefile"> src/app/music/album/album-list/album-list.component.html </context>
+          <context context-type = "linenumber"> 16 </context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d42ef6b9e0aab526363b81c40923eab4ee7725f0" datatype="html">
+        <source>El musico es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6b323c354cc67a8ccd475babdcffc917bbb0a881" datatype="html">
+        <source>El Album es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4f3348f1e3e4c07d34d7db9d6508b1924fbbd4a0" datatype="html">
+        <source>El precio es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">211</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bfb9947804cff707c5d9da7e1cf4a4b926946312" datatype="html">
+        <source>El premio es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0a6368634e34d097a1ae8f78ad3b4e3f328f2833" datatype="html">
+        <source>Formato incorrecto ,el formato correcto de la fecha de publicación es Día/Mes/Año Completo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">142,143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e2b5508f07e373cda5a922cc51921835e2dbc288" datatype="html">
+        <source>Clasificación es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b80ce374d24e941c93c41dd82223e790410cd76b" datatype="html">
+        <source>Formato incorrecto ,el formato correcto de la fecha de publicación es Día/Mes/Año Completo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">163,164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5ed201f9c50bfedb06f9e1cab489163b529d499b" datatype="html">
+        <source>Descripción es demasiado corto. Debería tener al menos 4 caracteres</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-create/album-create.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="679e3081844dbf00df0137fa43e3121cb77eaa51" datatype="html">
+        <source>Coleccionista es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fd1b5822c4da5f42ba5dc574128c51361123d97d" datatype="html">
+        <source>Canciones</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b0e611b2bfac70d1af43295307e558cbf9f48e57" datatype="html">
+        <source>Descripción</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/prize/prize-detail/prize-detail.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9bea75f59a97f4d38867c24cd4ebc75243eaa406" datatype="html">
+        <source>Comentarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="df7a2af49169c70b114ea66b54724f0fcdf95b7a" datatype="html">
+        <source>Clasificación</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fd1b5822c4da5f42ba5dc574128c51361123d97d" datatype="html">
+        <source>Canciones</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c01abbdcf30c2b4ff99aeeed54c399370b3f7cfd" datatype="html">
+        <source>Duración</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e0e5a2ad2b49a93d6f1cff0b95d67958b38e613e" datatype="html">
+        <source>Nuevo Comentario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8a1f05b6af213ab7aa5d8781882a497147f72cfe" datatype="html">
+        <source> Coleccionista* </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b2252bf1d7dff6cd64c378175cdd53c5ab11be70" datatype="html">
+        <source>Lista de Coleccionista</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="679e3081844dbf00df0137fa43e3121cb77eaa51" datatype="html">
+        <source>Coleccionista es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2aa84265c5d0dc37eae5d0855fb7da289f7e59cf" datatype="html">
+        <source> Comentario* </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7491b1ebfc5dd457492a5c481e2d2254216dc1fc" datatype="html">
+        <source>Descripción required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">229</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ba7146278428a76a944b5c06e2363c0d38dc4792" datatype="html">
+        <source> Rating* </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d276523a0806757c704ffaa35a1b82902c605a4e" datatype="html">
+        <source>Lista de Rating</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e2b5508f07e373cda5a922cc51921835e2dbc288" datatype="html">
+        <source>Rating es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f4e529ae5ffd73001d1ff4bbdeeb0a72e342e5c8" datatype="html">
+        <source>Cerrar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5b3075e8dc3f3921ec316b0bd83b6d14a06c1a4f" datatype="html">
+        <source>Guardar Cambios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">264</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="163ad1ed6d61ffc4a0ad7d4a0d800c39f203c25e" datatype="html">
+        <source>Nueva Canción</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a8d7bd8f964e6f53836dfbbc0f91cae1b95b5932" datatype="html">
+        <source> Nombre* </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5500b4c8f00ae6c700d227083ab9fb84115d55cd" datatype="html">
+        <source> Duración* </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">233</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ab660c431a8350d47836969925b121d792582f6f" datatype="html">
+        <source>Duración required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">249</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0f1c888f44252027b18fc55c11f25b25207928e3" datatype="html">
+        <source> En esta sección encontrará la información de la música </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">272,273</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">234,235</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1c91dfb949044fa1f8a43e8c12d6a96fbaf0e70e" datatype="html">
+        <source> En esta sección encontrará la información de los comentarios </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">275,276</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">237,238</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="00902bd5765e089db77e579ccfd17b71f007fc4d" datatype="html">
+        <source> En esta sección encontrará la información de las pistas </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">278,279</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2cc812f8063c52bebb2b9fae9308428ee6c00e17" datatype="html">
+        <source>Álbumes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-list/album-list.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-list/musicians-list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aae35a9d61babb4fdd7dea64668c7994957f1a7b" datatype="html">
+        <source>Crear álbum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-list/album-list.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dd76629c5f867387b97feb6b151a211c1bb8d425" datatype="html">
+        <source>Ver</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-list/album-list.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-list/coleccionista-list.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/prize/prize-list/prize-list.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="91ca2d654570361ebf04fb1daddb7fff24ff9a6a" datatype="html">
+        <source>Agregra nuevo musico</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b27d48f830f78bb7474f751ac0886294ccda085e" datatype="html">
+        <source> Musicos* </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0b617ca361b6aaa356dab2b66348a0710c76a20c" datatype="html">
+        <source>Lista de musicos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d42ef6b9e0aab526363b81c40923eab4ee7725f0" datatype="html">
+        <source>El musico es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0acf4e0f9350f920b529a38364281d337c54edfd" datatype="html">
+        <source>Cerrar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">218</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="648deab82a6f7c63f230620df01681c1419fbbd4" datatype="html">
+        <source>Grabar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="44a589f82b50566232332d3216edb7489fcf4c99" datatype="html">
+        <source> Agrega nuevo album </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">160,161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4fe03ed4321f97a2744c4cbd925d019f44c32462" datatype="html">
+        <source> Álbumes* </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb438bc07c219aed24c7487fb7fc8951540442d0" datatype="html">
+        <source>Elige un Álbum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6b323c354cc67a8ccd475babdcffc917bbb0a881" datatype="html">
+        <source>El Album es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0906acbdf10d449ae6d49a59b12dba9e329e9c0c" datatype="html">
+        <source> Precio* </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4f3348f1e3e4c07d34d7db9d6508b1924fbbd4a0" datatype="html">
+        <source>El precio es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">211</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="39ff6d6e5d3b89ff8e118036b3c6ab108ef6225f" datatype="html">
+        <source> En esta sección encontrará la información del álbum </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">240,241</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">167,168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7b58538b1dd31df6643c09049be1550edbc8641e" datatype="html">
+        <source>Coleccionistas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-list/coleccionista-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8af68bcbf27836e402199f65157506de79d4f552" datatype="html">
+        <source> En esta sección encontrará la información de los coleccionistas </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-list/coleccionista-list.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="29112488d3aabca09f858cd0afb2f4001a0f317b" datatype="html">
+        <source>Fecha de nacimiento:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="991b77e5de86e2222be7c12a1e1d464de45bf446" datatype="html">
+        <source>Premios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-list/musicians-list.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/prize/prize-list/prize-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="812c335ddf02b72a1e58be69413e6735980ed674" datatype="html">
+        <source>Organización</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1fd1f2abb9a57a8537ce9dcc49dcecabf2b1cc56" datatype="html">
+        <source> Premios* </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bfb9947804cff707c5d9da7e1cf4a4b926946312" datatype="html">
+        <source>El premio es requerido</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bab7c4562f1ff32f22eb0222e532f29bf647ec3d" datatype="html">
+        <source> Fecha premiacion* </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0a6368634e34d097a1ae8f78ad3b4e3f328f2833" datatype="html">
+        <source>Formato incorrecto ,el formato correcto de la fecha de publicación es Día/Mes/Año Completo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">142,143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0b1423b541875f1f98c4fa8290899a2308b37459" datatype="html">
+        <source> En esta sección encontrará la información de los premios </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">170,171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3e06f502a7fae9f32e75ebc5457cd30ada994a99" datatype="html">
+        <source>Ver detalle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-list/musicians-list.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b2861b3059f42489bfbb637edfac2d355ad6539b" datatype="html">
+        <source> En esta sección encontrará la información de los músicos </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/prize/prize-detail/prize-detail.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="45a4b797ab6931fb10ed4ad33c49a77582db3db8" datatype="html">
+        <source>Inicio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2cc812f8063c52bebb2b9fae9308428ee6c00e17" datatype="html">
+        <source>Álbumes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-list/album-list.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/coleccionista/coleccionista-detail/coleccionista-detail.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-detail/musician-detail.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-list/musicians-list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="630d33522f4eadda9a5cd885545f6edc25eada5d" datatype="html">
+        <source>Músicos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/album/album-detail/album-detail.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/music/musicians/musician-list/musicians-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="65e05a8bf509bda357b76b592442bcb9386b37fa" datatype="html">
+        <source> Coleccionistas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dd067aab439164ce585ad1e1e5efc2fd4ecf214d" datatype="html">
+        <source>Premios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

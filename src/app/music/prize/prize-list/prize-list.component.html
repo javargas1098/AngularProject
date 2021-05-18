@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <h1 i18n>Premios</h1>
+  <div class="row">
+      <div class="col-lg-3 col-md-3 col-xs-12 content" *ngFor="let prize of prizes; index as i">
+        <div class="card" routerLink="/prizes/{{prize.id}}">
+          <em class="fa fa-award"></em>
+          <h2 class="title">{{prize.name}}</h2>
+          <p class="text">{{prize.description}}</p>
+          <div class="content_btn">
+            <a routerLink="/prizes/{{prize.id}}" class="btn"><span i18n>Ver</span> {{prize.name}}</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

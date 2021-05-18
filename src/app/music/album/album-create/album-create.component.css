@@ -1,0 +1,28 @@
+.content
+{
+  margin-top: 60px;
+}
+.btn-cancel
+{
+  background: #212529;
+  color: rgb(219, 231, 214);
+}
+.btn-create
+{
+  background-color: rgb(190, 50, 3);
+  border-color: rgb(190, 50, 3);
+  color:rgb(219, 231, 214);
+}
+label
+{
+  color: rgb(190, 50, 3);
+
+}
+
+.alert-danger {
+  color: rgb(219, 231, 214) !important;
+  background-color: rgb(190, 50, 3)  !important;
+  border-color: rgb(190, 50, 3) !important;
+}
+
+

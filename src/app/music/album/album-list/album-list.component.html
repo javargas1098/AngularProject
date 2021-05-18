@@ -1,0 +1,22 @@
+
+<div class="wrapper">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-xs-12 ">
+      <h1 i18n>Álbumes</h1>
+      <a href="/albums/create" class="button_" i18n>Crear álbum</a>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-3 col-md-3 col-xs-12 content" *ngFor="let album of albums; index as i">
+        <div class="card" routerLink="/albums/{{album.id}}">
+          <em class="fa fa-music"></em>
+          <h2 class="title">{{album.name}}</h2>
+          <p class="text">{{album.description}}</p>
+          <div class="content_btn">
+            <a routerLink="/albums/{{album.id}}" class="btn"><span i18n>Ver</span> {{album.name}}</a>
+          </div>
+
+        </div>
+      </div>
+  </div>
+</div>
